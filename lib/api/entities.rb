@@ -135,6 +135,7 @@ module API
       expose :target_branch, :source_branch, :upvotes, :downvotes
       expose :author, :assignee, using: Entities::UserBasic
       expose :source_project_id, :target_project_id
+      expose :description, :milestone_id
     end
 
     class SSHKey < Grape::Entity
